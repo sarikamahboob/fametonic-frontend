@@ -1,103 +1,107 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div className="min-h-screen bg-black text-white">
+      {/* Top Banner */}
+      <div className="bg-[linear-gradient(90deg,#FC004E_0%,#10CBE0_100%)] h-[46px] px-[20px] flex items-center justify-center text-sm font-medium text-white">
+      <span className="font-extrabold text-[22px] leading-none align-middle" style={{fontFamily: "var(--font-figtree)", letterSpacing: '0%'}}> 
+        🚀 <span className="text-[#00e7f9]">FRESH BEGINNINGS SALE: </span> 
+        Extra 25% OFF, Limited Spots - start your journey today!</span>
+      </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+
+      {/* Header */}
+      <header className="flex items-start justify-between px-6 mt-[35px] mb-[57px] lg:px-12 max-w-[1124px] mx-auto">
+        <div className="text-2xl font-bold">
+          <Image src="/images/logo.png" alt="Fametonic Logo" width={173.12} height={74} />
+        </div>
+        <nav className="hidden md:flex items-center gap-[40px]">
+          <Link href="#" className="text-gray-300 font-semibold text-[18px] leading-none text-center align-middle" style={{fontFamily: "var(--font-figtree)", letterSpacing: '0%'}}>
+            About us
+          </Link>
+          <Link href="#" className="text-gray-300 font-semibold text-[18px] leading-none text-center align-middle" style={{fontFamily: "var(--font-figtree)",letterSpacing: '0%'}}>
+            Contact
+          </Link>
+        </nav>
+      </header>
+
+      {/* Main Content */}
+      <main className="px-6 lg:px-12">
+        <div className="max-w-[1124px] mx-auto grid lg:grid-cols-2 gap-12 items-center">
+          {/* Left Content */}
+          <div className="w-[516px]">
+            <div className="">
+            <h1
+              className="text-[35px] font-bold leading-[1.2] align-middle"
+              style={{ fontFamily: "var(--font-urbanist)", letterSpacing: "0%" }}
+            >
+              Want to Turn Social Media Into a <span className="text-white">Profitable Career?</span>
+            </h1>
+
+            <h2
+              className="text-[35px] font-bold leading-[1.2] align-middle rounded"
+              style={{
+                fontFamily: "var(--font-urbanist)",
+                letterSpacing: "0%",
+                color: "#00E7F9",
+                textShadow: "0px 4px 4px #FC004E",
+              }}
+            >
+              Discover your way to success with Fametonic:
+            </h2>
+
+            </div>
+
+            {/* Feature List */}
+             <div className="mt-[16px]">
+               <div className="flex items-center gap-[10px]">
+                 <Image src="/images/star.png" alt="Star" width={22} height={22} />
+                 <span className="text-[16px] font-semibold leading-[22px] align-middle" style={{fontFamily: "var(--font-figtree)", letterSpacing: '0%'}}>Start growing your influence right away—no waiting required!</span>
+               </div>
+               <div className="flex items-center gap-[10px] mt-[13px]">
+                 <Image src="/images/star.png" alt="Star" width={22} height={22} />
+                 <span className="text-[16px] font-semibold leading-[22px] align-middle" style={{fontFamily: "var(--font-figtree)", letterSpacing: '0%'}}> 
+                   Create viral TikToks and Reels step by step with easy-to-follow lessons
+                 </span>
+               </div>
+               <div className="flex items-center gap-[10px] mt-[13px]">
+                 <Image src="/images/star.png" alt="Star" width={22} height={22} />
+                 <span className="text-[16px] font-semibold leading-[22px] align-middle" style={{fontFamily: "var(--font-figtree)", letterSpacing: '0%'}}>Use a Personal AI Worker to boost your content</span>
+               </div>
+               <div className="flex items-center gap-[10px] mt-[13px]">
+                 <Image src="/images/star.png" alt="Star" width={22} height={22} />
+                 <span className="text-[16px] font-semibold leading-[22px] align-middle" style={{fontFamily: "var(--font-figtree)", letterSpacing: '0%'}}>Learn from expert-led courses designed for aspiring influencers</span>
+               </div>
+             </div>
+
+            {/* Get Started Button */}
+             <div className="mt-[30px]">
+              <button
+                className="bg-[#FC004E] text-white font-bold rounded-[10px] transition-all duration-300 transform flex items-center justify-center w-[313px] h-[40px] text-[20px] leading-none align-middle shadow-[2px_2px_10px_0px_#00E7F9]" 
+                style={{fontFamily: "var(--font-figtree)", letterSpacing: '0%'}}
+              >
+                <span className="pr-[10px]">GET STARTED</span> 
+                <span className="w-[11px]">
+                <img src="/images/arrow.png" alt="Arrow"/>
+                </span>
+              </button>
+              <div className="mt-[10px] w-[313px] text-center">
+                <span className="text-[12px] font-normal leading-[16px] align-middle" style={{fontFamily: "var(--font-figtree)", letterSpacing: '0%'}}>1-minute quiz for personalized insights</span>
+              </div>
+            </div>
+
+            {/* Legal Text */}
+            <div className="text-xs text-gray-500 mt-[30px]">
+              <p className="text-[12px] font-medium leading-none align-middle text-[#ABABAB] leading-[1.4] mb-[12px]" style={{fontFamily: "var(--font-figtree)", letterSpacing: '0%'}}>By clicking "Get Started", you agree with Terms and Conditions, Privacy Policy, Subscription Terms</p>
+              <p className="text-[10px] font-medium leading-none align-middle text-[#ABABAB]" style={{fontFamily: "var(--font-figtree)", letterSpacing: '0%'}}>Fametonic 2025 ©All Rights Reserved.</p>
+             </div>
+          </div>
+
+          {/* Right Content - Phone Mockup */}
         </div>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
   );
 }
