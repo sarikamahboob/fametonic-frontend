@@ -94,7 +94,7 @@ export default function Home() {
               <p
                 className="text-[12px] font-medium leading-none text-center align-middle text-[#ABABAB] mb-[19px] font-figtree"
               >
-                By clicking "Get Started", you agree with Terms and Conditions,
+                By clicking &quot;Get Started&quot;, you agree with Terms and Conditions,
                 Privacy Policy, Subscription Terms
               </p>
               <p
@@ -126,7 +126,7 @@ export default function Home() {
               <p
                 className="text-[12px] text-[#ABABAB] mb-[12px] font-figtree"
               >
-                By clicking "Get Started", you agree with Terms and Conditions,
+                By clicking &quot;Get Started&quot;, you agree with Terms and Conditions,
                 Privacy Policy, Subscription Terms
               </p>
               <p
