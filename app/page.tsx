@@ -6,24 +6,26 @@ export default function Home() {
   return (
     <div className="min-h-screen text-white">
       {/* Top Banner */}
-      <div className="bg-[linear-gradient(90deg,#FC004E_0%,#10CBE0_100%)] py-[20px] lg:py-[12px] flex items-center justify-center text-white px-3 text-center">
+      <div className="bg-[linear-gradient(90deg,#FC004E_0%,#10CBE0_100%)] py-[20px] lg:py-[12px] flex items-center justify-center text-white text-center">
         <span
-          className="font-extrabold text-[16px] sm:text-[20px] md:text-[22px] leading-none align-middle font-figtree tracking-[0%]"
+          className="font-extrabold text-[16px] sm:text-[20px] md:text-[22px] leading-none align-middle font-figtree tracking-[0%] text-center px-4 sm:px-0"
         >
           🚀 <span className="text-[#00e7f9]">FRESH BEGINNINGS SALE: </span>
-          Extra 25% OFF, Limited Spots - start your journey today!
+          <span className="font-bold text-[14px] sm:text-[20px]">
+            Extra 25% OFF, Limited Spots - start your journey today!
+          </span>
         </span>
       </div>
 
       {/* Header */}
       <header className="flex items-center lg:items-start mt-[16px] md:mt-[35px] mb-10 max-w-[1124px] mx-auto px-4 md:px-4 lg:px-12 xl:px-0">
         {/* Logo */}
-        <div className="flex justify-center md:justify-start z-4 w-full ">
+        <div className="flex justify-center md:justify-start z-4 w-[107px] sm:w-full mx-auto">
           <Image
             src="/images/logo.png"
             alt="Fametonic Logo"
-            width={150}
-            height={60}
+            width={169.27}
+            height={72.25}
           />
         </div>
 
@@ -57,7 +59,7 @@ export default function Home() {
           {/* Left Content */}
           <div className="w-full md:w-[520px] relative z-10 mt-[242px] sm:mt-[410px] md:mt-0">
             <h1
-              className="text-[25px] sm:text-[30px] md:text-[35px] font-bold leading-[1.1] text-center md:text-left align-middle font-urbanist"
+              className="px-[10px] sm:px-0 text-[25px] sm:text-[30px] md:text-[35px] font-extrabold md:font-bold leading-[1.1] text-center md:text-left align-middle font-urbanist"
             >
               Want to Turn Social Media Into a Profitable Career?
             </h1>
@@ -69,7 +71,7 @@ export default function Home() {
             </h2>
 
             {/* Features */}
-            <div className="mt-[22px] lg:mt-[16px] mb-[22px] lg:mb-[30px]">
+            <div className="mt-[22px] lg:mt-[16px] mb-[12px] lg:mb-[30px] p-[4px] sm:p-0">
               {[
                 "Start growing your influence right away—no waiting required!",
                 "Create viral TikToks and Reels step by step with easy-to-follow lessons",
@@ -124,7 +126,7 @@ export default function Home() {
             {/* Legal Text - Hidden on mobile, shown on desktop */}
             <div className="hidden md:block mt-6">
               <p
-                className="text-[12px] text-[#ABABAB] mb-[12px] font-figtree"
+                className="text-[12px] text-[#ABABAB] mb-[9px] font-figtree"
               >
                 By clicking &quot;Get Started&quot;, you agree with Terms and Conditions,
                 Privacy Policy, Subscription Terms
